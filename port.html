@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero-section {
+            background-image: url('https://picsum.photos/2000/1000');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .project-description {
+            display: none;
+        }
+        .modal-body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero-section" id="home">
+        <div class="container text-center">
+            <h1>Welcome to my portfolio</h1>
+            <p>Hi, am an eager learner always seeking new challenges to expand my skills in the world of computer science. I am eager to leverage my coding skills and hands-on experience to contribute to exciting projects and drive meaningful results in a dynamic tech environment.</p>
+            <a href="#projects" class="btn btn-primary">View my projects</a>
+        </div>
+    </section>
+    <section class="projects-section" id="projects">
+        <div class="container text-center">
+            <h2>My Projects</h2
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/200/300" class="project-img" alt="Project 1">
+                    <h3>Age-Based Tourist Recommendation Website</h3>
+                    <p>A dynamic website providing personalized travel recommendations based on user age groups. Technologies used: HTML, CSS.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal">View details</button>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/200/301" class="project-img" alt="Project 2">
+                    <h3>Online Examination System Project in PHP</h3>
+                    <p>Online Examination system is the process of conducting exam online.This project provide accurate and flexible manner of conducting exam online.This Project provides more accurate and efficient way to take exam.It also provides flexibility to the user as one can give the exam at home.This is a one of the good project for final year student. PHP,MySql</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project2Modal">View details</button>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/200/302" class="project-img" alt="Project 3">
+                    <h3>Airline Reservation System in Java </h3>
+                    <p>Airline Reservation system is a web based reservation system made in java programming language.As all we know,Java is one of the most prominent programming language for software development.This project provides a facility to search for the flight available between two station,compare fare of the different flights,compare travelling time of the flight.It allows user to make a reservation of flight,cancellation of flight,up-gradation of ticket also.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project3Modal">View details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills-section" id="skills">
+        <div class="container text-center">
+            <h2>My Skills</h2>
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-check" aria-hidden="true"></i> HTML/CSS</li>
+                <li class="list-inline-item"><i class="fa fa-check" aria-hidden="true"></i> Java</li>
+                <li class="list-inline-item"><i class="fa fa-check" aria-hidden="true"></i> SQL</li>
+                <li class="list-inline-item"><i class="fa fa-check" aria-hidden="true"></i> Python</li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="container text-center">
+            <h2>Get in touch</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send message</button>
+            </form>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">Project 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Project 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project3ModalLabel">Project 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
